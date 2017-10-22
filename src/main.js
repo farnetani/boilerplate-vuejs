@@ -4,6 +4,15 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+import 'font-awesome/css/font-awesome.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+// Carrega o jquery
+window.$ = window.jQuery = require('jquery')
+
+// Carrega o javascript do bootstrap
+require('bootstrap')
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

@@ -32,6 +32,16 @@ const webpackConfig = merge(baseWebpackConfig, {
     new webpack.DefinePlugin({
       'process.env': env
     }),
+    // *** FARNETANI: colocado para reconhecer o bootstrap ***
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery',
+      Popper: ['popper.js', 'default']
+      // In case you imported plugins individually, you must also require them here:
+      // Util: 'exports-loader?Util!bootstrap/js/dist/util',
+      // Dropdown: 'exports-loader?Dropdown!bootstrap/js/dist/dropdown'
+    }),
     // UglifyJs do not support ES6+, you can also use babel-minify for better treeshaking: https://github.com/babel/minify
     new webpack.optimize.UglifyJsPlugin({
       compress: {
