@@ -1,6 +1,6 @@
 # app-webpack
 
-> A Vue.js project
+> Um boilerplate do Vuejs criado pelo vue-cli init webpack contendo alguns componentes básicos para o desenvolvimento de uma aplicação: bootstrap e outros
 
 ## Build Setup
 
