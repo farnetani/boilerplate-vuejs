@@ -37,11 +37,18 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 webpack/
 ├── build/
 ├── config/
+├─┬ dist/
+│ └─┬ static/
+│   ├── css/
+│   ├── fonts/
+│   ├── img/
+│   └── js/
 ├── scripts/
 ├─┬ src/
 │ ├── assets/
 │ ├── components/
-│ └── router/
+│ ├── router/
+│ └── scss/
 ├── static/
 └─┬ test/
   ├─┬ e2e/
@@ -73,6 +80,25 @@ webpack/
 │ ├── index.js
 │ ├── prod.env.js
 │ └── test.env.js
+├─┬ dist/
+│ ├─┬ static/
+│ │ ├─┬ css/
+│ │ │ └── app.17ac7ff9d85998ab14ab80d481db5684.css
+│ │ ├─┬ fonts/
+│ │ │ ├── fontawesome-webfont.674f50d.eot
+│ │ │ ├── fontawesome-webfont.af7ae50.woff2
+│ │ │ ├── fontawesome-webfont.b06871f.ttf
+│ │ │ └── fontawesome-webfont.fee66e7.woff
+│ │ ├─┬ img/
+│ │ │ └── fontawesome-webfont.912ec66.svg
+│ │ └─┬ js/
+│ │   ├── app.a5aaa4e4eb5b93396dcc.js
+│ │   ├── app.a5aaa4e4eb5b93396dcc.js.map
+│ │   ├── manifest.c34d336f525b20910ff5.js
+│ │   ├── manifest.c34d336f525b20910ff5.js.map
+│ │   ├── vendor.2d817150a300c85c17b6.js
+│ │   └── vendor.2d817150a300c85c17b6.js.map
+│ └── index.html
 ├─┬ scripts/
 │ └── generate-docs.js
 ├─┬ src/
@@ -82,6 +108,8 @@ webpack/
 │ │ └── HelloWorld.vue
 │ ├─┬ router/
 │ │ └── index.js
+│ ├─┬ scss/
+│ │ └── app.scss
 │ ├── App.vue
 │ └── main.js
 ├── static/
@@ -120,7 +148,8 @@ webpack/
 src/
 ├── assets/
 ├── components/
-└── router/
+├── router/
+└── scss/
 ```
 <!-- AUTO-GENERATED-CONTENT:END -->
 
@@ -135,6 +164,8 @@ src/
 │ └── HelloWorld.vue
 ├─┬ router/
 │ └── index.js
+├─┬ scss/
+│ └── app.scss
 ├── App.vue
 └── main.js
 ```
